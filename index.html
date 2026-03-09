@@ -19,6 +19,10 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" type="image/png" href="./static/images/logo.png">
+  <style>
+    .highlight-geo { color: #E8A317; font-weight: bold; }
+    .highlight-loco { color: #E8A317; font-weight: bold; }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -54,7 +58,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GeoLoco: Leveraging 3D Geometric Priors from Visual Foundation Model for Robust RGB-Only Humanoid Locomotion</h1>
+          <h1 class="title is-1 publication-title"><span class="highlight-geo">Geo</span><span class="highlight-loco">Loco</span>: Leveraging 3D <span class="highlight-geo">Geo</span>metric Priors from Visual Foundation Model for Robust RGB-Only Humanoid <span class="highlight-loco">Loco</span>motion</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Yufei Liu,</span>
@@ -141,7 +145,7 @@
            alt="GeoLoco overview: RGB-only humanoid locomotion on challenging terrains."
            style="width: 100%; border-radius: 10px;">
       <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        <span class="dnerf">GeoLoco</span> enables robust RGB-only humanoid locomotion
+        <span class="dnerf"><span class="highlight-geo">Geo</span><span class="highlight-loco">Loco</span></span> enables robust RGB-only humanoid locomotion
         via 3D geometric priors from Visual Foundation Models.
       </h2>
     </div>
@@ -160,7 +164,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The prevailing paradigm of perceptive humanoid locomotion relies heavily on active depth sensors. However, this depth-centric approach fundamentally discards the rich semantic and dense appearance cues of the visual world, severing low-level control from the high-level reasoning essential for general embodied intelligence. While monocular RGB offers a ubiquitous, information-dense alternative, end-to-end reinforcement learning from raw 2D pixels suffers from extreme sample inefficiency and catastrophic sim-to-real collapse due to the inherent loss of geometric scale. To break this deadlock, we propose <span class="dnerf">GeoLoco</span>, a purely RGB-driven locomotion framework that conceptualizes monocular images as high-dimensional 3D latent representations by harnessing the powerful geometric priors of a frozen, scale-aware Visual Foundation Model (VFM). Rather than naive feature concatenation, we design a proprioceptive-query multi-head cross-attention mechanism that dynamically attends to task-critical topological features conditioned on the robot's real-time gait phase. Crucially, to prevent the policy from overfitting to superficial textures, we introduce a dual-head auxiliary learning scheme. This explicit regularization forces the high-dimensional latent space to strictly align with the physical terrain geometry, ensuring robust zero-shot sim-to-real transfer. Trained exclusively in simulation, <span class="dnerf">GeoLoco</span> achieves robust zero-shot transfer to the Unitree G1 humanoid and successfully negotiates challenging terrains.
+            The prevailing paradigm of perceptive humanoid locomotion relies heavily on active depth sensors. However, this depth-centric approach fundamentally discards the rich semantic and dense appearance cues of the visual world, severing low-level control from the high-level reasoning essential for general embodied intelligence. While monocular RGB offers a ubiquitous, information-dense alternative, end-to-end reinforcement learning from raw 2D pixels suffers from extreme sample inefficiency and catastrophic sim-to-real collapse due to the inherent loss of geometric scale. To break this deadlock, we propose <span class="dnerf"><span class="highlight-geo">Geo</span><span class="highlight-loco">Loco</span></span>, a purely RGB-driven locomotion framework that conceptualizes monocular images as high-dimensional 3D latent representations by harnessing the powerful geometric priors of a frozen, scale-aware Visual Foundation Model (VFM). Rather than naive feature concatenation, we design a proprioceptive-query multi-head cross-attention mechanism that dynamically attends to task-critical topological features conditioned on the robot's real-time gait phase. Crucially, to prevent the policy from overfitting to superficial textures, we introduce a dual-head auxiliary learning scheme. This explicit regularization forces the high-dimensional latent space to strictly align with the physical terrain geometry, ensuring robust zero-shot sim-to-real transfer. Trained exclusively in simulation, <span class="dnerf"><span class="highlight-geo">Geo</span><span class="highlight-loco">Loco</span></span> achieves robust zero-shot transfer to the Unitree G1 humanoid and successfully negotiates challenging terrains.
           </p>
         </div>
       </div>
@@ -196,31 +200,7 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- TODO: Add your own result demonstrations here -->
-      <!-- Example: side-by-side comparison videos, qualitative results, etc. -->
-    </div>
-
-    <!-- Related Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            <!-- TODO: Add links to related work in your research area -->
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Related Work. -->
-
-  </div>
-</section>
 
 
 <section class="section" id="BibTeX">
